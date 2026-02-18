@@ -1,8 +1,8 @@
 package Intermediate.Nullsafety
-data class User(val username: String, val isActive: Boolean)
+data class User1(val username: String, val isActive: Boolean)
 
 // Devuelve una lista de nombres de usuario activos
-fun getActiveUsernames(users: List<User>): List<String> {
+fun getActiveUsernames(users: List<User1>): List<String> {
     return users.mapNotNull { user ->
         if (user.isActive) user.username else null
         // 'mapNotNull' descarta automáticamente los valores null
@@ -11,14 +11,16 @@ fun getActiveUsernames(users: List<User>): List<String> {
 
 fun main() {
     val allUsers = listOf(
-        User("alice123", true),
-        User("bob_the_builder", false),
-        User("charlie99", true)
+        User1("alice123", true),
+        User1("bob_the_builder", false),
+        User1("charlie99", true)
     )
 
     println(getActiveUsernames(allUsers))
     // [alice123, charlie99]
 }
+
+fun getActiveUsernames(users: kotlin.collections.List<Intermediate.Nullsafety.User>): Any? {}
 
 /*
 Conclusión:
