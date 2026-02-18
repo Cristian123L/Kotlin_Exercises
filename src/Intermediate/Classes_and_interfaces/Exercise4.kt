@@ -25,7 +25,6 @@ class SmartMessenger(val basicMessenger: BasicMessenger) : Messenger by basicMes
 fun main() {
     val basicMessenger = BasicMessenger()
     val smartMessenger = SmartMessenger(basicMessenger)
-
     basicMessenger.sendMessage("Hello!")
     // Sending message: Hello!
     println(smartMessenger.receiveMessage())
