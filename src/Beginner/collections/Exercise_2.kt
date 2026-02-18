@@ -1,4 +1,4 @@
-package collections
+package Beginner.collections
 
 fun main(){
     //el setof es lista que no acepta duplicados

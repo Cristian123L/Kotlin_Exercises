@@ -1,4 +1,4 @@
-package collections
+package Beginner.collections
 
 fun main(){
     //Este es un mapa igual solo de read-only

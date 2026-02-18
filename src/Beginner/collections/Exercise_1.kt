@@ -1,4 +1,4 @@
-package collections
+package Beginner.collections
 
 fun main() {
     //Aqui se aprende  a usasr el listof en este caso
