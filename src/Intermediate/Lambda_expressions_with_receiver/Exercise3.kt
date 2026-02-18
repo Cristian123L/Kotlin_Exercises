@@ -1,5 +1,4 @@
 package Intermediate.Lambda_expressions_with_receiver
-
 // Función de extensión para List<Int>
 // Devuelve una nueva lista donde cada elemento se incrementa en 1
 fun List<Int>.incremented(): List<Int> {
